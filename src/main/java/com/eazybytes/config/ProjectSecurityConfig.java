@@ -28,7 +28,7 @@ public class ProjectSecurityConfig extends WebSecurityConfigurerAdapter {
 		http.cors().configurationSource(new CorsConfigurationSource() {
 			@Override public CorsConfiguration getCorsConfiguration(HttpServletRequest
 			request) { CorsConfiguration config = new CorsConfiguration();
-			config.setAllowedOrigins(Collections.singletonList("http://localhost:4200"));
+			config.setAllowedOrigins(Collections.singletonList("*"));
 			config.setAllowedMethods(Collections.singletonList("*"));
 			config.setAllowCredentials(true);
 			config.setAllowedHeaders(Collections.singletonList("*"));
