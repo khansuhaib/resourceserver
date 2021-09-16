@@ -30,7 +30,7 @@ public class ProjectSecurityConfig extends WebSecurityConfigurerAdapter {
 			request) { CorsConfiguration config = new CorsConfiguration();
 			config.setAllowedOrigins(Collections.singletonList("*"));
 			config.setAllowedMethods(Collections.singletonList("*"));
-			config.setAllowCredentials(false);
+			//config.setAllowCredentials(false);
 			config.setAllowedHeaders(Collections.singletonList("*"));
 			config.setMaxAge(3600L); return config;
 			}
