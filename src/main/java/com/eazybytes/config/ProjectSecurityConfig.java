@@ -30,7 +30,7 @@ public class ProjectSecurityConfig extends WebSecurityConfigurerAdapter {
 			request) { CorsConfiguration config = new CorsConfiguration();
 			config.setAllowedOrigins(Collections.singletonList("http://angular4-app-bank.apps-crc.testing"));
 			config.setAllowedMethods(Collections.singletonList("*"));
-			config.setAllowCredentials(false);
+			config.setAllowCredentials(true);
 			config.setAllowedHeaders(Collections.singletonList("*"));
 			config.setMaxAge(3600L); return config;
 			}
